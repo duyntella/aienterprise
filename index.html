@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>AI Adoption by Department | Clean Executive Dashboard</title>
+<title>AI in Enterprises | by Duy NT</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700;800;900&family=Manrope:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
@@ -354,7 +354,7 @@ button{touch-action:manipulation}
       <div class="section-head">
         <div>
           <h2>Hướng dẫn dùng AI hiệu quả & an toàn</h2>
-          <p>Khung ngắn gọn để các phòng ban dùng AI đúng cách, giảm rủi ro dữ liệu và vẫn giữ chất lượng đầu ra.</p>
+          <p>Một số gợi ý sử dụng AI đúng cách, giảm rủi ro dữ liệu và vẫn giữ chất lượng đầu ra.</p>
         </div>
       </div>
       <div class="guide-grid">
@@ -482,14 +482,14 @@ function renderHeroAndKpis(){
     `;
   } else if(activePanel === "guide"){
     title.textContent = "Dùng AI hiệu quả, an toàn và dễ kiểm soát";
-    desc.textContent = "Nguyên tắc cốt lõi: dữ liệu đúng, mục tiêu rõ, AI chỉ hỗ trợ, con người duyệt cuối. Cách làm này giúp triển khai nhanh nhưng vẫn kiểm soát được rủi ro.";
+    desc.textContent = "Nguyên tắc cốt lõi: dữ liệu đúng, mục tiêu rõ, AI hỗ trợ, con người chỉ đạo và kiểm soát. Triển khai nhanh nhưng vẫn kiểm soát được rủi ro.";
     kpis.innerHTML = `
-      <div class="kpi"><label>Nguyên tắc</label><strong>4</strong><span>Dễ nhớ, dễ áp dụng</span></div>
-      <div class="kpi"><label>Vai trò AI</label><strong>Hỗ trợ</strong><span>Không thay thế phê duyệt</span></div>
+      <div class="kpi"><label>Vai trò con người</label><strong>Điều hành</strong><span>Chỉ đạo và Kiểm soát</span></div>
+      <div class="kpi"><label>Vai trò AI</label><strong>Hỗ trợ</strong><span>Thực hiện việc theo chỉ đạo</span></div>
     `;
   } else {
     title.textContent = "Ứng dụng AI theo từng phòng ban";
-    desc.textContent = "Tổng hợp số lượng usecase theo phòng ban. Chọn phòng ban ở thanh bên trái để xem các công việc nên áp dụng AI, công cụ phù hợp và nguyên tắc dùng an toàn.";
+    desc.textContent = "Tổng hợp usecase ứng dụng theo phòng ban / đơn vị. Chọn phòng ban ở thanh Menu để xem chi tiết các công việc có thể ứng dụng AI và công cụ phù hợp.";
     kpis.innerHTML = `
       <div class="kpi"><label>Phòng ban / đơn vị</label><strong>${DATA.departments.length}</strong></div>
       <div class="kpi"><label>Tổng use case</label><strong>${allItems().length}</strong></div>
